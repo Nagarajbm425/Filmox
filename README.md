@@ -4,11 +4,12 @@ Filmox is an entertainment engagement platform designed to connect fans, creator
 The system includes role-based access control, where Super Admins, Sub-Admins, and Users each have well-defined permissions and data visibility. This ensures content and operations are structured according to user responsibilities, maintaining a secure and maintainable workflow.
 
 As a manual tester, my focus was on validating the system from both user experience and business logic perspectives, ensuring that every module works seamlessly across platforms.
-🧪 Testing Approach (What I Did and Why)
 
+🧪** Testing Approach (What I Did and Why)
+**
 My testing approach for Filmox was structured and multi-layered. Each type of testing served a specific purpose and directly supported developers in quickly understanding and fixing issues.
 
-1. Functional Workflow Testing
+**1. Functional Workflow Testing**
 Why I Used This Approach
 
 Filmox has multiple interconnected modules (Highlights → Contest → Media → Fanclub → Theatre). Any small break in functionality can disrupt user flow.
@@ -29,7 +30,7 @@ Allowed developers to reproduce issues easily because test steps followed natura
 
 Ensured high-level business flows worked as intended
 
-2. Role-Based Access Testing
+**2. Role-Based Access Testing**
 Why
 
 The platform heavily depends on permission control for Admin, Sub-Admin, and User.
@@ -49,7 +50,7 @@ Made it easier for developers to isolate role-specific logic errors
 
 Ensured that Sub-Admins saw only the modules assigned to them, improving UX and reliability
 
-3. UI/UX & Usability Testing
+**3. UI/UX & Usability Testing**
 Why
 
 The platform has multiple lists, forms, media elements, and real-time UI components.
@@ -63,7 +64,7 @@ Developers could easily replicate visual issues due to simple screenshots and di
 
 Helped avoid user confusion and polished the product quality
 
-4. Integration Testing Between Modules
+**4. Integration Testing Between Modules**
 Why
 
 Filmox modules share data with each other (e.g., Media affects Highlights, Contest uses Media, Theatre uses Cast & Crew).
@@ -83,7 +84,7 @@ Gave developers confidence that underlying API integrations worked well
 
 Helped identify mismatches between backend responses and UI rendering
 
-5. Mobile App + Web Cross Testing
+**5. Mobile App + Web Cross Testing**
 Why
 
 Some features behave differently on mobile (e.g., Movie Promotion ratings, Contest participation, Theatre playback).
@@ -102,7 +103,7 @@ Developers could identify mobile-specific UI and API handling issues
 
 Ensured that shared endpoints behaved consistently across platforms
 
-6. Regression Testing After Fixes
+**6. Regression Testing After Fixes**
 Why
 
 After developers resolved initial issues, retesting was essential to guarantee stability.
@@ -114,7 +115,8 @@ Prevented previously fixed issues from reappearing
 Ensured new updates didn’t break existing features
 
 Allowed developers to release updates with confidence
-🧪 Redis-Powered Feeds – Testing Perspective
+
+**🧪 Redis-Powered Feeds – Testing Perspective**
 
 Filmox uses Redis to cache user feeds (Phonebook, Fanclub, Media, Highlights) for fast retrieval. While the developer implemented the caching logic, my role was to evaluate how it behaves from a functional and performance standpoint.
 
@@ -132,7 +134,7 @@ API responses before and after updates
 
 Real-time refresh behaviour when new media or posts are added
 
-💡 Why This Testing Was Important
+**💡 Why This Testing Was Important**
 1. Fast Feed Loading
 
 Redis is meant to reduce load time.
@@ -213,7 +215,8 @@ Faster
 More stable
 
 More reliable
-🏆 Key Outcomes From My Testing
+
+**🏆 Key Outcomes From My Testing**
 1. Improved Stability Across Core Modules
 
 Testing helped uncover issues in critical modules like Highlights, Contest, Cast & Crew, and Digital Theatre, leading to major quality improvements.

@@ -1,4 +1,5 @@
-🎬 Filmox – Entertainment Engagement Platform
+**🎬 Filmox – Entertainment Engagement Platform**
+
 Filmox is an entertainment engagement platform designed to connect fans, creators, and administrators in a unified digital ecosystem. The platform supports modules such as Phonebook, Fanclub, Media Gallery, Highlights, Chat, Contest, Cast & Crew, and Digital Theatre. With a MERN architecture and real-time capabilities powered by Socket.io and Redis caching, Filmox aims to deliver fast content access, interactive features, and a scalable experience for both web and mobile users.
 
 The system includes role-based access control, where Super Admins, Sub-Admins, and Users each have well-defined permissions and data visibility. This ensures content and operations are structured according to user responsibilities, maintaining a secure and maintainable workflow.
